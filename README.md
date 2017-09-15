@@ -1,6 +1,8 @@
-### IOS11 中 appIcon 设置无效的问题
+### iOS11中appIcon设置无效的问题
 
-###### 解决方案:
+使用了CocoaPods的Xcode工程,在iOS11版的手机上图标不显示,原因在于CocoaPods脚本出了点问题.解决方案如下:
+
+######解决方案：
 1. 在Podfile 添加如下代码.
 ```
 post_install do |installer|
@@ -19,5 +21,5 @@ end
 $pod install
 ```
 
-###### 参考![](https://github.com/CocoaPods/CocoaPods/issues/7003)
+###### [参考这里](https://github.com/CocoaPods/CocoaPods/issues/7003)
 
