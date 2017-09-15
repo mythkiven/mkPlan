@@ -40,5 +40,6 @@ fi
 然后重新运行工程即可
 
 ###### [解决方案源于这哥们](https://github.com/CocoaPods/CocoaPods/issues/7003)
-我的本地环境是:Xcode9(GM)+iOS11手机+pod1.2.0
+
+本地环境是:Xcode9(GM)+iOS11手机+pod1.2.0
 
