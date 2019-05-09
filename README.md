@@ -1,45 +1,32 @@
 
-##  iOS11中AppIcon设置无效的问题
+![](https://img.shields.io/badge/readingPlan-books-brightgreen.svg) ![](https://img.shields.io/badge/readingPlan-sourceCode-green.svg) ![](https://img.shields.io/badge/readingPlan-devTips-success.svg)
 
-使用了CocoaPods的Xcode工程,在iOS11版的手机上AppIcon不显示,原因是CocoaPods的资源编译脚本在iOS11下出了点问题.需要修改脚本.两种修改方式: 
+这个仓库主要是整理个人的开发tips以及一些阅读计划。
 
-###### 1.在Podfile添加脚本修改：
 
-  1). 在Podfile 添加如下代码.
-```
-post_install do |installer|
-    copy_pods_resources_path = "Pods/Target Support Files/Pods-[工程名]/Pods-[工程名]-resources.sh"
-    string_to_replace = '--compile "${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"'
-    assets_compile_with_app_icon_arguments = '--compile "${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}" --app-icon "${ASSETCATALOG_COMPILER_APPICON_NAME}" --output-partial-info-plist "${BUILD_DIR}/assetcatalog_generated_info.plist"'
-    text = File.read(copy_pods_resources_path)
-    new_contents = text.gsub(string_to_replace, assets_compile_with_app_icon_arguments)
-    File.open(copy_pods_resources_path, "w") {|file| file.puts new_contents }
-end
-```
-**需要注意的是,将`[工程名]` 换成自己工程的名称**
+###  DevTips
 
-  2).然后运行
-```
-$pod install
-```
+> 以前开发中遇到的问题和一些解决方案散落在印象笔记和有道云笔记中，我会陆续整理然后传到这里，开发中遇到类似问题的朋友可参考之。
 
-###### 2.手动修改
+> devtips内容包含但不限于这些语言:oc、python、c、js、java、swift等语言。
 
-打开工程目录下:`[工程名]/Pods/Target Support Files/Pods-[工程名]/Pods-[工程名]-resources.sh `这个文件,替换最后一段代码:
+|NO.|Title|Remarks |
+| --- | --- | --- |
+| 000 | [iOS11中AppIcon设置无效的问题](./devTips/iosTips_ios11AppIcon.md) |  |
 
-修改前:
-```
- printf "%s\0" "${XCASSET_FILES[@]}" | xargs -0 xcrun actool --output-format human-readable-text --notices --warnings --platform "${PLATFORM_NAME}" --minimum-deployment-target "${!DEPLOYMENT_TARGET_SETTING_NAME}" ${TARGET_DEVICE_ARGS} --compress-pngs --compile "${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
-fi
-```
-修改后:
-```
-printf "%s\0" "${XCASSET_FILES[@]}" | xargs -0 xcrun actool --output-format human-readable-text --notices --warnings --platform "${PLATFORM_NAME}" --minimum-deployment-target "${!DEPLOYMENT_TARGET_SETTING_NAME}" ${TARGET_DEVICE_ARGS} --compress-pngs --compile "${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}" --app-icon "${ASSETCATALOG_COMPILER_APPICON_NAME}" --output-partial-info-plist "${BUILD_DIR}/assetcatalog_generated_info.plist"
-fi
-```
-然后重新运行工程即可
+###  ReadingBooks
 
-###### [解决方案源于这哥们](https://github.com/CocoaPods/CocoaPods/issues/7003)
+> 整理以前的读书心得和一些新阅读的书籍，目前从事的就是区块链相关的硬件钱包的开发，就先从区块链相关的书籍开始。
 
-本地环境是:Xcode9(GM)+iOS11手机+pod1.2.0
+|NO.|Books|Remarks |
+| --- | --- | --- |
+| 000 | [bitcoinbook](./readingBook/bitcoinbook.md) |  |
 
+
+###  ReadingSourceCode
+
+> 更多是从架构的角度来阅读，分析三方库的实现。
+
+|NO.|SourceCode|Remarks |
+| --- | --- | --- |
+|  |   |   |
