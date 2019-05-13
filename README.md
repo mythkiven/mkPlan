@@ -6,26 +6,26 @@
 
 ###  DevTips
 
-> 以前开发中遇到的问题和一些解决方案散落在印象笔记和有道云笔记中，我会陆续整理然后传到这里，开发中遇到类似问题的朋友可参考之。
+> 以前开发中遇到问题和解决方案大多散落在印象笔记和有道云笔记中，会在陆续整理后同步过来，开发中遇到类似问题的朋友可参考之。
 
-> devtips内容包含但不限于这些语言:oc、python、c、js、java、swift等语言。
+> devTips内容包含但不限于这些语言:oc、python、c、js、java等语言。
 
 |NO.|Title|Remarks |
 | --- | --- | --- |
-| 000 | [iOS11中AppIcon设置无效的问题](./devTips/iosTips_ios11AppIcon.md) |  |
+| 000 | [iOS11中AppIcon设置无效的问题](./devTips/iosTips_ios11AppIcon.md) | 通过修改本地的pod脚本文件来解决 |
 
 ###  ReadingBooks
 
-> 整理以前的读书心得和一些新阅读的书籍，目前从事的就是区块链相关的硬件钱包的开发，就先从区块链相关的书籍开始。
+> 读书心得，同时也会整理相关的学习资料。
 
 |NO.|Books|Remarks |
 | --- | --- | --- |
-| 000 | [bitcoinbook](./readingBook/bitcoinbook.md) |  |
+| 000 | [bitcoinbook](./readingBook/bitcoinbook.md) |  除了本书外，同时也收集整理了**区块链**入门资料 |
 
 
 ###  ReadingSourceCode
 
-> 更多是从架构的角度来阅读，分析三方库的实现。
+> 源码阅读心得
 
 |NO.|SourceCode|Remarks |
 | --- | --- | --- |
