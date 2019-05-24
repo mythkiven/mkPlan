@@ -12,7 +12,7 @@
 
 |NO.|Title|Remarks |
 | --- | --- | --- |
-| 000 | [iOS11中AppIcon设置无效的问题](./devTips/iosTips_ios11AppIcon.md) | 通过修改本地的pod脚本文件来解决 |
+| 000 | [iOS11中AppIcon设置无效的问题](./devTips/ios11AppIcon.md) | 通过修改本地的pod脚本文件来解决 |
 
 ###  ReadingBooks
 
