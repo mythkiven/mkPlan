@@ -13,6 +13,8 @@
 |NO.|Title|Remarks |
 | --- | --- | --- |
 | 000 | [iOS11中AppIcon设置无效的问题](./devTips/ios11AppIcon.md) | 通过修改本地的pod脚本文件来解决 |
+| 001 | [Skip selected url while mirroring site with wget](./devTips/wget.md) | by`--reject-regex logout`|
+
 
 ###  ReadingBooks
 
