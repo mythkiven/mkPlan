@@ -1,3 +1,12 @@
+# mkPlan | Developer Reading Notes & Dev Tips
+
+Personal developer knowledge base: iOS/OC/Python dev tips, book reading notes, source-code study plans, and blockchain learning resources.
+
+Keywords: ios dev tips, developer reading list, source code reading, programming notes, objective-c tips
+
+## Quick Start
+
+Browse [`devTips/`](./devTips/) for solutions to common iOS/dev problems, or [`readingBook/`](./readingBook/) for book notes.
 
 ![](https://img.shields.io/badge/readingPlan-books-brightgreen.svg) ![](https://img.shields.io/badge/readingPlan-sourceCode-green.svg) ![](https://img.shields.io/badge/readingPlan-devTips-success.svg)
 
