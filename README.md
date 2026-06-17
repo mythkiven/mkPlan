@@ -23,6 +23,7 @@ Browse [`devTips/`](./devTips/) for solutions to common iOS/dev problems, or [`r
 | --- | --- | --- |
 | 000 | [iOS11中AppIcon设置无效的问题](./devTips/ios11AppIcon.md) | 通过修改本地的pod脚本文件来解决 |
 | 001 | [Skip selected url with wget](./devTips/wget.md) | by`--reject-regex logout`|
+| 002 | [二进制重排 / Order File 启动优化](./devTips/binary-reorder-order-file.md) | iOS 冷启动优化实操 |
 
 
 ###  ReadingBooks
